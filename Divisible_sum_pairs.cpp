@@ -2,8 +2,6 @@
 
 using namespace std;
 
-vector<string> split_string(string);
-
 // Brute force
 int divisibleSumPairs(int n, int k, vector<int> ar)
 {
@@ -17,6 +15,6 @@ int divisibleSumPairs(int n, int k, vector<int> ar)
                 count++;
         }
     }
-    
+
     return count;
 }
