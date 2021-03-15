@@ -2,8 +2,6 @@
 
 using namespace std;
 
-vector<string> split(const string &);
-
 int birthday(vector<int> s, int d, int m)
 {
     int count = 0;
