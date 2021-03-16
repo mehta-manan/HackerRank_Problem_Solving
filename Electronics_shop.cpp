@@ -4,7 +4,7 @@ using namespace std;
 
 int getMoneySpent(vector<int> keyboards, vector<int> drives, int b)
 {
-    vector<int> amounts;
+    vector<int> amounts = {-1};
 
     for (int i = 0; i < keyboards.size(); i++)
     {
@@ -15,8 +15,5 @@ int getMoneySpent(vector<int> keyboards, vector<int> drives, int b)
         }
     }
 
-    if (amounts.size() == 0)
-        return -1;
-    else
-        return *std::max_element(amounts.begin(), amounts.end());
+    return *std::max_element(amounts.begin(), amounts.end());
 }
