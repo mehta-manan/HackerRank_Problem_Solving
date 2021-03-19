@@ -15,6 +15,6 @@ int beautifulDays(int i, int j, int k)
         if (abs(rev_i - i) % k == 0)
             c++;
     }
-
+    
     return c;
 }
